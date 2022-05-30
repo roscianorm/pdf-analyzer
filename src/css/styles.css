@@ -1,0 +1,107 @@
+:root {
+	--white-0: #ffffff;
+	--white-1: #fdfdfd;
+	--black-0: #000000;
+	--black-1: #2b2b2b;
+	--main-font: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: var(--black-1);
+	font-family: var(--main-font);
+	margin: 0;
+}
+.wrapper {
+	width: 300px;
+	margin: 0 auto;
+}
+header {
+	color: var(--white-1);
+	border-bottom: 1px solid var(--white-1);
+	width: 100%;
+	margin: 30px 0;
+}
+h1 {
+	margin: 0;
+}
+.modal {
+	background-color: var(--white-1);
+	box-sizing: border-box;
+	padding: 15px;
+	border-radius: 10px;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+label {
+	display: block;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+input {
+	margin-top: 5px;
+	box-sizing: border-box;
+	display: block;
+	min-height: 35px;
+	width: 100%;
+}
+button {
+	border: none;
+	background-color: var(--black-1);
+	color: var(--white-1);
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font: 600 16px/1 var(--main-font);
+}
+.results.hide {
+	display: none;
+}
+.results p {
+	font-weight: 600;
+}
+.results ol {
+	column-count: 2;
+}
+
+@media (min-width: 768px) {
+	header {
+		margin: 50px 0;
+	}
+	.wrapper {
+		width: 500px;
+	}
+	label {
+		margin-bottom: 25px;
+	}
+	label,
+	input {
+		font-size: 18px;
+	}
+	button {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 992px) {
+	header {
+		margin: 70px 0;
+	}
+	.wrapper {
+		width: 700px;
+	}
+	label {
+		margin-bottom: 30px;
+	}
+	label,
+	input {
+		font-size: 24px;
+	}
+	button {
+		font-size: 28px;
+	}
+}
