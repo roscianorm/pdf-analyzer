@@ -58,8 +58,6 @@ button {
 	width: 100%;
 	font: 600 16px/1 var(--main-font);
 }
-.results {
-}
 .results.hide {
 	display: none;
 }
